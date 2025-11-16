@@ -1,7 +1,6 @@
 #%%
 import os
 import sys
-
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 import torch
 from pathlib import Path
@@ -459,6 +458,3 @@ for audio_file_path in audio_file_paths:
 
     except FileNotFoundError:
         print(f"Помилка: Тестовий файл не знайдено за шляхом {audio_file_path}")
-#%%
-
-#%%
